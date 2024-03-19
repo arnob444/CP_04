@@ -3,7 +3,7 @@ using namespace std;
 typedef long long int ll;
 int main()
 {
-    ll mn = INT_MAX, i, n, x, sum = 0;
+    ll n, i, x, sum = 0, mn = INT_MAX;
     cin >> n;
     for (i = 0; i < n; i++)
     {
