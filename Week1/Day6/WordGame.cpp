@@ -20,6 +20,7 @@ int main()
                 mp[x]++;
             }
         }
+        
         vector<int> cnt(3);
         for (int i = 0; i < 3; i++)
         {
