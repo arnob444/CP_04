@@ -28,9 +28,9 @@ int main()
         for (int i = 0; i < n - 1; i++)
         {
             if (arr[i] != arr[i + 1])
-                cnt++;
+                cnt++; // 1
             else
-                dup++;
+                dup++; // 1 2 3 4
         }
 
         if (dup % 2 == 0)
