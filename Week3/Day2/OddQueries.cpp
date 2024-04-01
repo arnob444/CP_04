@@ -28,6 +28,7 @@ int main()
         {
             pref[i] = pref[i - 1] + arr[i];
         }
+        
         while (q--)
         {
             ll r, l, k;
