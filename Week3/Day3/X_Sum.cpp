@@ -64,7 +64,9 @@ int main()
                     }
                 }
                 if (sum > ans)
+                {
                     ans = sum;
+                }
             }
         }
         cout << ans << endl;
