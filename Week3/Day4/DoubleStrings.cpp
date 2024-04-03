@@ -1,9 +1,9 @@
 #pragma GCC optimize("3")
 #pragma GCC target("avx,avx2,fma")
 #include <bits/stdc++.h>
-#define endl "\n"
 using namespace std;
-typedef long long int ll;
+#define endl   "\n"
+#define ll     long long int
 void fastIO()
 {
     ios_base::sync_with_stdio(false);
@@ -13,55 +13,42 @@ void solve()
 {
     int n;
     cin >> n;
-    vector<string> a(n);
-    for (int i = 0; i < n - 1; i++)
+    string a[n];
+    bool ans[n];
+    set<string> st;
+    for (int i = 0; i < n; i++)
     {
         cin >> a[i];
+        st.insert(a[i]);
+        ans[i] = 0;
     }
-    map<string, int> freq;
-    for (int i = 0; i <= n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
-        freq[a[i]]++;
-    }
-
-    string ans(n, '0');
-    for (int i = 0; i <= n - 1; i++)
-    {
-        if (a[i].size() == 1)
-            continue;
-        for (int j = 0; j <= a.size() - 2; j++)
+        for (int j = 1; j < a[i].size(); j++)
         {
-            string x = "", y = "";
-            for (int k = 0; k <= j; k++)
+            string s1 = "", s2 = "";
+            for (int k = 0; k < j; k++)
             {
-                x.push_back(a[i][k]);
+                s1 += a[i][k];
             }
-            for (int k = j + 1; k <= a[i].size() - 1; k++)
+            for (int k = j; k < a[i].size(); k++)
             {
-                y.push_back(a[i][k]);
+                s2 += a[i][k];
             }
 
-            if (x == y)
+            if (st.find(s1) != st.end() and st.find(s2) != st.end())
             {
-                if (freq[x] > 0)
-                {
-                    ans[i] = '1';
-                    break;
-                }
-            }
-            else
-            {
-                if (freq[x] > 0 and freq[y] > 0)
-                {
-                    ans[i] = '1';
-                    break;
-                }
-            }
-            if (a[i] == "1")
+                ans[i] = 1;
                 break;
+            }
         }
-        cout << ans << endl;
     }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << ans[i];
+    }
+    cout << endl;
 }
 int main()
 {
