@@ -2,8 +2,8 @@
 #pragma GCC target("avx,avx2,fma")
 #include <bits/stdc++.h>
 using namespace std;
-#define endl "\n"
-#define ll long long int
+#define endl    "\n"
+#define ll      long long int
 void fastIO()
 {
     ios_base::sync_with_stdio(false);
