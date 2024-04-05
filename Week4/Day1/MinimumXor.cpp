@@ -14,23 +14,18 @@ void solve()
     int n;
     cin >> n;
     vector<int> v(n);
-    for (int i = 0; i < n; i++)
-    {
-        cin >> v[i];
-    }
     int Xor = 0;
     for (int i = 0; i < n; i++)
     {
+        cin >> v[i];
         Xor = Xor ^ v[i];
     }
 
     int ans = Xor;
-    int p;
 
     for (int i = 0; i < n; i++)
     {
-        p = Xor ^ v[i];
-        ans = min(ans, p);
+        ans = min(ans, Xor ^ v[i]);
     }
     cout << ans << endl;
 }
