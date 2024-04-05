@@ -17,7 +17,7 @@ void solve()
     cin >> s;
     vector<ll> reduce;
     ll total = 0;
-    int mnchange = 0;
+    int minChange = 0;
 
     for (int i = 0; i < n; i++)
     {
@@ -27,7 +27,7 @@ void solve()
         {
             if (r > l)
             {
-                mnchange++;
+                minChange++;
                 total += r;
                 reduce.push_back(r - l);
             }
@@ -40,7 +40,7 @@ void solve()
         {
             if (l > r)
             {
-                mnchange++;
+                minChange++;
                 reduce.push_back(l - r);
                 total += l;
             }
@@ -52,14 +52,14 @@ void solve()
     }
 
     vector<ll> ans(n + 1);
-    for (int i = mnchange; i <= n; i++)
+    for (int i = minChange; i <= n; i++)
     {
         ans[i] = total;
     }
 
     sort(reduce.begin(), reduce.end(), greater<ll>());
 
-    for (int i = mnchange - 1; i >= 1; i--)
+    for (int i = minChange - 1; i >= 1; i--)
     {
         total -= reduce.back();
         reduce.pop_back();
