@@ -22,7 +22,6 @@ void solve()
     }
 
     int ans = Xor;
-
     for (int i = 0; i < n; i++)
     {
         ans = min(ans, Xor ^ v[i]);
