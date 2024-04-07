@@ -10,9 +10,7 @@ void solve()
 
     vector<ll> v(n);
     for (int i = 0; i < n; i++)
-    {
         cin >> v[i];
-    }
 
     ll odd = 0, ans = 0;
     for (int i = 0; i < k; i++)
@@ -20,9 +18,9 @@ void solve()
         if (v[i] % 2 == 1)
             odd++;
     }
-
     if (odd > 0)
         ans++;
+
     for (int i = k; i < n; i++)
     {
         if (v[i - k] % 2 == 1)
