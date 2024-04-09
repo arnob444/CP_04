@@ -17,9 +17,7 @@ int main()
 
     vector<int> a(m + 1);
     for (int i = 0; i <= m; i++)
-    {
         cin >> a[i];
-    }
 
     vector<vector<int>> all_mask;
     for (int mask = 0; mask <= m; mask++)
@@ -28,13 +26,9 @@ int main()
         for (int k = 0; k < n; k++)
         {
             if ((a[mask] >> k) & 1)
-            {
                 v.push_back(1);
-            }
             else
-            {
                 v.push_back(0);
-            }
         }
         all_mask.push_back(v);
     }
@@ -48,17 +42,11 @@ int main()
         for (int k = 0; k < n; k++)
         {
             if (fedor_mask[k] != v[k])
-            {
                 cnt++;
-            }
         }
-
         if (cnt <= k)
-        {
             ans++;
-        }
     }
-
     cout << ans << endl;
     return 0;
 }

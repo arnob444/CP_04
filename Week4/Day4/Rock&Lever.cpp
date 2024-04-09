@@ -12,7 +12,7 @@ int main()
         for (int i = 0; i < n; i++) {
             int x;
             cin >> x;
-            mp[__lg(x)]++; // Last set bit kon position e 1 .
+            mp[__lg(x)]++; // Last set bit e 1 kon position e ache seta indentify kore
         }
         // Time complexity of __lg() = O(1)
 
