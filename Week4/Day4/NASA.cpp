@@ -2,7 +2,7 @@
 using namespace std;
 #define endl "\n"
 #define ll long long int
-const int maxN = (1 << 15);  // 0 to 2^15 - 1
+const int maxN = (1 << 15);         // 0 to 2^15 - 1
 vector<int> all_palindrome;
 
 void mark_palindrome()
@@ -52,6 +52,7 @@ void solve()
     }
     cout << ans / 2 << endl;
 }
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -60,6 +61,7 @@ int main()
     int t;
     cin >> t;
     mark_palindrome();
+
     while (t--)
     {
         solve();
