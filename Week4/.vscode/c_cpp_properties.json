@@ -12,7 +12,7 @@
             ],
             "compilerPath": "C:\\Users\\ASUS\\Downloads\\Compressed\\MNGW\\mingw64\\bin\\gcc.exe",
             "cStandard": "c17",
-            "cppStandard": "gnu++23",
+            "cppStandard": "gnu++20",
             "intelliSenseMode": "windows-gcc-x64",
             "compileCommands": ""
         }
