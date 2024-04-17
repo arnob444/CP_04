@@ -9,23 +9,23 @@ int main()
         int n;
         cin >> n;
         map<int, int> mp;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
+        {
             int x;
             cin >> x;
             mp[__lg(x)]++; // Last set bit e 1 kon position e ache seta indentify kore
         }
-        // Time complexity of __lg() = O(1)
+        // Time complexity : __lg() = O(1)
 
         long long ans = 0;
-        for (auto [x, y] : mp) {
+        for (auto [x, y] : mp)
+        {
             ans += (1LL * y * (y - 1)) / 2;
         }
         cout << ans << endl;
     }
-
     return 0;
 }
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // #define endl            "\n"

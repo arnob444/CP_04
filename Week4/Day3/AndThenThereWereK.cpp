@@ -20,6 +20,7 @@ void solve()
     ans--;
     cout << ans << endl;
 }
+
 int main()
 {
     ios_base::sync_with_stdio(false);

@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define endl        "\n"
-#define ll          long long int
-
+#define endl    "\n"
+#define ll      long long int
 void solve()
 {
     ll n;
@@ -16,11 +15,12 @@ void solve()
     }
     cout << res << endl;
 }
+
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    
+
     ll t;
     cin >> t;
     while (t--)

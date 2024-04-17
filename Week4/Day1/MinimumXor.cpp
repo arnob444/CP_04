@@ -1,14 +1,12 @@
-#pragma GCC optimize("3")
-#pragma GCC target("avx,avx2,fma")
 #include <bits/stdc++.h>
 using namespace std;
-#define endl "\n"
-#define ll long long int
-void fastIO()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-}
+#define endl        "\n"
+#define ll          long long int
+#define ON(n,k)     (n | (1 << k))
+#define OFF(n,k)    (n & (~(1 << k)))
+#define isON(n,k)   ((n >> k) & 1)
+#define flip(n,k)   ((1 << k) ^ n)
+
 void solve()
 {
     int n;
@@ -28,9 +26,12 @@ void solve()
     }
     cout << ans << endl;
 }
+
 int main()
 {
-    fastIO();
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
     int t;
     cin >> t;
     while (t--)

@@ -4,14 +4,15 @@ int main()
 {
     int n;
     cin >> n;
-    int arr[n];
+    vector<int> arr(n);
+
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
 
     int j = 0;
-    for (int i = 0; i < (1 << n); i++)
+    for (int i = 0; i < (1 << n); i++) // 2^n
     {
         for (int k = 0; k < n; k++)
         {
@@ -22,6 +23,5 @@ int main()
         }
         cout << endl;
     }
-
     return 0;
 }
