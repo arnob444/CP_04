@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define endl "\n"
-#define ll long long int
-#define ON(n, k) (n | (1 << k))
-#define OFF(n, k) (n & (~(1 << k)))
-#define isON(n, k) ((n >> k) & 1)
-#define flip(n, k) ((1 << k) ^ n)
-#define fr for (int i = 0; i < n; i++)
+#define endl        "\n"
+#define ll          long long int
+#define ON(n,k)     (n | (1 << k))
+#define OFF(n,k)    (n & (~(1 << k)))
+#define isON(n,k)   ((n >> k) & 1)
+#define flip(n,k)   ((1 << k) ^ n)
+#define fr          for (int i = 0; i < n; i++)
 
 bool binarySearch(int arr[], int l, int r, int key)
 {
