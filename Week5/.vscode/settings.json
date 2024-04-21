@@ -15,6 +15,7 @@
 		"random": "cpp",
 		"bitset": "cpp",
 		"chrono": "cpp",
-		"algorithm": "cpp"
+		"algorithm": "cpp",
+		"iostream": "cpp"
 	}
 }
