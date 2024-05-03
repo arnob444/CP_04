@@ -30,13 +30,13 @@ void solve()
     }
     else
     {
-        ll sum = 0, i = 4, j = 4;
+        ll sum = 0;
         for (int i = 0; i < 4; ++i)
         {
             sum += arr[i];
             sum += brr[i];
         }
-
+        ll i = 4, j = 4;
         while (i < n and j < m and (i + j) < 11)
         {
             if (arr[i] > brr[j])
