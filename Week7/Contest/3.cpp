@@ -12,11 +12,11 @@ int main()
     {
         int a, b, c, d;
         cin >> a >> b >> c >> d;
-
-        if (a > b)
+        // 2 9 10 6
+        if (a > b)  
             swap(a, b);
-        if (c > d)
-            swap(c, d);
+        if (c > d)  
+            swap(c, d); // 2 9 6 10
 
         if ((a < c && c < b && b < d) || (c < a && a < d && d < b) || (a < c && d < b && b < c) || (c < a && b < d && d < a))
             cout << "YES\n";

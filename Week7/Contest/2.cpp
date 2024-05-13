@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
     int t;
@@ -10,6 +9,7 @@ int main()
         string s;
         cin >> s;
         string r = s;
+
         sort(r.begin(), r.end());
         if (r == s)
         {
