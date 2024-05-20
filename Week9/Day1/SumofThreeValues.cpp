@@ -9,10 +9,10 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        cin >> a[i].first;
+        cin >> a[i].first;1
         a[i].second = i + 1;
     }
-
+ 
     sort(a.begin(), a.end());
     for (int i = 0; i < n; i++)
     {
