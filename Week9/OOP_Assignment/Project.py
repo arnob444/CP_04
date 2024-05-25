@@ -40,7 +40,7 @@ def markAttendance(name):
  
 #### FOR CAPTURING SCREEN RATHER THAN WEBCAM
 def captureScreen(bbox=(300,300,690+300,530+300)): #sceen capture kortese ekta resulation ee
-    capScr = np.array(ImageGrab.grab(bbox)) #sceen er image re array hishebe represent kore
+    capScr = np.array(ImageGrab.grab(bbox))   #sceen er image re array hishebe represent kore
     capScr = cv2.cvtColor(capScr, cv2.COLOR_RGB2BGR) #rgb te convert kore
     return capScr
  
