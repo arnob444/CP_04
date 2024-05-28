@@ -11,4 +11,4 @@ if income > 0:
      tax = (10000 * .1 ) + ((income - 20000) * .2)
      print("Tax : ",tax)
 else:
-   print("Invalid\n")
+   print("Invalid\n") 

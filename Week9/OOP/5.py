@@ -29,7 +29,6 @@ class Manager(Employee):
     def productivity(self):
         print(f"{self.name}({self.department}) - {self.ustad/self.rating}")
 
-
 employees = [
     Sales("Alice", "Sales", 10000, 50),
     Development("Bob", "Development", 5000, 10),
