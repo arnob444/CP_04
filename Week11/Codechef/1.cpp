@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define endl "\n"
+#define ll long long int
+#define ON(n, k) (n | (1 << k))
+#define OFF(n, k) (n & (~(1 << k)))
+#define isON(n, k) ((n >> k) & 1)
+#define flip(n, k) ((1 << k) ^ n)
+#define gcd(a, b) __gcd(a, b)
+#define lcm(a, b) ((a * b) / gcd(a, b))
+#define fr for (int i = 0; i < n; i++)
+
+void solve()
+{
+    int n;
+    cin >> n;
+    vector<pair<int, int>> v(n);
+    fr
+    {
+        cin >> v[i].first >> v[i].second;
+    }
+    int a = 0;
+    fr
+    {
+        for (int j = i + 1; j < n; ++j)
+        {
+            int s = v[i].first, k = v[i].second;
+            int s1 = v[j].first, k1 = v[j].second;
+            a = max(a, s * k1 + k * s1);
+        }
+    }
+    cout << a << endl;
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
