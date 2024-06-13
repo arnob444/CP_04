@@ -12,15 +12,21 @@ using namespace std;
 
 void solve()
 {
-    string a, b;
-    cin >> a >> b;
+    ll m, n, k;
+    cin >> m;
+    
+    if (m == 2)
+    {
+        n = 4;
+        k = 8;
+    }
+    else
+    {
+        n = 2 * m;
+        k = m * m;
+    }
 
-    // char tmp = a[0];
-    // a[0] = b[0];
-    // b[0] = tmp;
-    swap(a[0], b[0]);
-
-    cout << a << " " << b << endl;
+    cout << n << " " << k << endl;
 }
 int main()
 {

@@ -12,15 +12,11 @@ using namespace std;
 
 void solve()
 {
-    string a, b;
-    cin >> a >> b;
+    int x, y;
+    cin >> x >> y;
 
-    // char tmp = a[0];
-    // a[0] = b[0];
-    // b[0] = tmp;
-    swap(a[0], b[0]);
-
-    cout << a << " " << b << endl;
+    int ans = ceil(10.0 * (y - x) / (100 - y));
+    cout << ans << endl;
 }
 int main()
 {
