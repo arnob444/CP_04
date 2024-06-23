@@ -1,0 +1,9 @@
+PBDS = Policy Based Data Structure
+
+        set + multiset
+
+i. order_of_key(x) -> O(logn) 
+  -> eta bole dey x er caite strictly less koyta value ache
+
+ii. find_by_order(index) -> O(logn) 
+  -> suppose if index = 3, then eta bole dibe 3rd index e ke ache 

@@ -1,29 +1,46 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define endl        "\n"
-#define ll          long long int
-#define ON(n,k)     (n | (1 << k))
-#define OFF(n,k)    (n & (~(1 << k)))
-#define isON(n,k)   ((n >> k) & 1)
-#define flip(n,k)   ((1 << k) ^ n)
-#define gcd(a, b)   __gcd(a, b)
-#define lcm(a, b)   ((a / gcd(a, b)) * b)
-#define fr          for (int i = 0; i < n; i++)
+#define ll long long int
 
-void solve()
+bool isPrime(ll n)
 {
-    
+    if (n == 1)
+        return false;
+
+    for (ll i = 2; i * i <= n; i++)
+    {
+        if (n % i == 0)
+            return false;
+    }
+    return true;
 }
+
+bool isPerfectPrime(ll n)
+{
+    ll x = sqrtl(n);
+    return (x * x) == n;
+}
+
 int main()
 {
-    ios_base::sync_with_stdio(false);
+    ios::sync_with_stdio(false);
     cin.tie(NULL);
-    
-    int t;
-    cin >> t;
-    while (t--)
+
+    ll n;
+    cin >> n;
+
+    vector<ll> a(n);
+    for (int i = 0; i < n; i++)
     {
-        solve();
+        cin >> a[i];
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (isPrime(sqrtl(a[i])) and isPerfectPrime(a[i]))
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
     }
     return 0;
 }
