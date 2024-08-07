@@ -1,0 +1,10 @@
+{
+	"python.analysis.typeCheckingMode": "off",
+	"files.associations": {
+		"iostream": "cpp",
+		"ostream": "cpp",
+		"array": "cpp",
+		"string": "cpp",
+		"string_view": "cpp"
+	}
+}
